@@ -1,3 +1,12 @@
 #! /bin/bash
 
-echo "THIS PROJECT TAKES YOU CLOSE TO YOUR CHILDHOOD FAVOURITE GAME TIC_TAC_TOE"
+assignSign=$((RANDOM%2))
+isXsign=1
+isOsign=0
+
+if [ $assignSign -eq isXsign ]
+	then
+		echo "Your sign is 'X'"
+else
+		echo "Your sign is 'O'"
+fi
