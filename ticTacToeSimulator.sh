@@ -3,6 +3,8 @@
 assignSign=$((RANDOM%2))
 isXsign=1
 isOsign=0
+NumberOfRowsInBoard=3
+NumberOfColumnsInBoard=3
 
 if [ $assignSign -eq $isXsign ]
 	then
@@ -21,3 +23,14 @@ if [ $tossForFirstChance -eq $isYou ]
 	else
 		echo "Your opponents turn...wait for him to make move"
 fi
+
+echo "The board u gonna play is ---->"
+
+for ((rowNumber=0; rowNumber<$NumberOfRowsInBoard; rowNumber++))
+	do
+		for ((columnNumber=0; columnNumber<$NumberOfColumnsInBoard; columnNumber++))
+			do
+				echo -ne " . "
+			done
+		echo
+	done
